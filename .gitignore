@@ -1,0 +1,4 @@
+node_modules/
+tests/.downloads/
+docs/test-cleaned-inventory.xlsx
+*.log

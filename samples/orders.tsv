@@ -1,0 +1,8 @@
+order_id	customer_id	item	quantity	notes
+ORD-1001	00101	Desk lamp	2	" Deliver before noon "
+ORD-1002	00102	Notebook	12	
+ORD-1002	00102	Notebook	12	
+ORD-1003	00105	Storage box	unknown	Handle with care
+ORD-1004	00103	Cable organizer	5	"Second floor
+Reception desk"
+				

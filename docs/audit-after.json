@@ -1,0 +1,83 @@
+{
+  "metrics": [
+    {
+      "selector": ".workflow-header p",
+      "font": "13px",
+      "color": "rgb(98, 98, 105)",
+      "background": "rgb(255, 255, 255)",
+      "contrast": 6.05,
+      "width": 1280,
+      "height": 19.5
+    },
+    {
+      "selector": ".rule small",
+      "font": "12px",
+      "color": "rgb(98, 98, 105)",
+      "background": "rgb(252, 252, 253)",
+      "contrast": 5.9,
+      "width": 189.765625,
+      "height": 19.1875
+    },
+    {
+      "selector": ".table-status",
+      "font": "12px",
+      "color": "rgb(98, 98, 105)",
+      "background": "rgb(255, 255, 255)",
+      "contrast": 6.05,
+      "width": 814,
+      "height": 56
+    },
+    {
+      "selector": ".remove",
+      "font": "14px",
+      "color": "rgb(98, 98, 105)",
+      "background": "rgb(234, 234, 237)",
+      "contrast": 5.04,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "selector": ".cell-button",
+      "font": "13px",
+      "color": "rgb(34, 34, 37)",
+      "background": "rgb(255, 255, 255)",
+      "contrast": 15.87,
+      "width": 119,
+      "height": 44
+    },
+    {
+      "selector": ".table-legend",
+      "font": "12px",
+      "color": "rgb(98, 98, 105)",
+      "background": "rgb(255, 255, 255)",
+      "contrast": 6.05,
+      "width": 814,
+      "height": 30
+    },
+    {
+      "selector": ".file-button small",
+      "font": "12px",
+      "color": "rgb(98, 98, 105)",
+      "background": "rgb(234, 234, 237)",
+      "contrast": 5.04,
+      "width": 82.0625,
+      "height": 18
+    }
+  ],
+  "tableTabStops": 1,
+  "arrowKeyMovesCell": true,
+  "stageAfterLocateFromConfigure": "2\nConfigure",
+  "checks": [
+    "Skip link and route focus",
+    "Spatial cell navigation, one table tab stop, Tab exit",
+    "Inspector selection and focus return",
+    "Segmented control arrow keys",
+    "Full comparison accessible descriptions",
+    "Scope, worksheet and workflow stability",
+    "200% root text and 768x512 zoom-equivalent viewport",
+    "390x844 layout and footer",
+    "44px coarse-pointer file-removal target",
+    "Reduced motion and forced-color rendering",
+    "Zero HTTP requests and runtime errors"
+  ]
+}

@@ -1,0 +1,11 @@
+import {build} from 'esbuild';
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+await mkdir('release', {recursive:true});
+const worker = await build({entryPoints:['src/worker.mjs'],bundle:true,write:false,minify:true,format:'iife',platform:'browser',target:'es2022'});
+const samples = JSON.parse(await readFile('samples/embedded.json','utf8'));
+const app = await build({entryPoints:['src/main.jsx'],bundle:true,write:false,minify:true,format:'iife',platform:'browser',target:'es2022',define:{'process.env.NODE_ENV':'"production"',__WORKER__:JSON.stringify(worker.outputFiles[0].text),__SAMPLES__:JSON.stringify(samples)}});
+const js = app.outputFiles.find(f => !f.path.endsWith('.css'))?.text || app.outputFiles[0].text;
+const css = await readFile('src/style.css', 'utf8');
+const html = `<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; worker-src blob:; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"><meta name="description" content="Clean data files locally. Nothing uploaded. Nothing changed without your choice."><title>DataTidy — Offline Batch Data Cleaner</title><style>${css}</style></head><body><div id="root"></div><noscript>DataTidy needs JavaScript enabled in your browser. All processing stays on your device.</noscript><script>${js.replace(/<\/script/gi,'<\\/script')}</script></body></html>`;
+await writeFile('release/DataTidy.html', html);
+console.log(`Built release/DataTidy.html (${(Buffer.byteLength(html)/1024/1024).toFixed(2)} MB), fully offline.`);

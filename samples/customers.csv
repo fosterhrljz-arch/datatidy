@@ -1,0 +1,25 @@
+customer_id,name,email,city,amount
+00101," Acme Retail ",contact@acme.example,New York,1250.00
+00102,Bluebird Co.,sales@bluebird.example,San Francisco,420.00
+00103,Cedar Supply,,Chicago,3100.00
+00104,Delta Goods,hello@delta.example,Austin,890.00
+00105,Evergreen Trading,info@evergreen.example,"Seattle ",2400.00
+00102,Bluebird Co.,sales@bluebird.example,San Francisco,420.00
+00106,Fjord Industries,orders@fjord.example,Boston,760.00
+,,,,
+00107,Grove & Co.,info@grove.example,Portland,pending
+00108,Harbor Studio,team@harbor.example," Denver",620.50
+00109,Ivy Market,info@ivy.example,Phoenix,1800.00
+00110,Juniper Labs,lab@juniper.example,San Diego,950.00
+00111,Kestrel Co.,hello@kestrel.example,Miami,440.00
+00112,Linden Goods,shop@linden.example,Atlanta,123.45
+00113,Maple Studio,team@maple.example,Toronto,300.00
+00114,Northstar,sales@northstar.example,Vancouver,980.00
+00115,Oak & Stone,hi@oak.example,Dallas,65.00
+00116,Pine Works,info@pine.example,Houston,700.00
+00117,Quartz Design,team@quartz.example,Montreal,860.00
+00118,River Supply,help@river.example,Detroit,1500.00
+00119,Summit Co.,info@summit.example,Salt Lake City,2100.00
+00120,Terra Studio,hello@terra.example,Santa Fe,350.00
+00121,Union Market,info@union.example,Newark,450.00
+00122,Willow Goods,shop@willow.example,Raleigh,500.00
